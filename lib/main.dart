@@ -5,6 +5,7 @@ import 'demo/Bottom_navigation_bar_demo.dart';
 import 'demo/Basic_demo.dart';
 import 'demo/View_demo.dart';
 import 'demo/Silver_demo.dart';
+import 'demo/Navigator_demo.dart';
 
 void main() => runApp(App());
 
@@ -19,7 +20,12 @@ class App extends StatelessWidget {
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
         splashColor: Colors.white70,
       ),
-      home: Home()
+      // home: NavigatorDemo(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Home(),
+        '/about': (context) => Page(title: 'About'),
+      }
     );
   }
 }

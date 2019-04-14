@@ -19,7 +19,7 @@ class App extends StatelessWidget {
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
         splashColor: Colors.white70,
       ),
-      home: SilverDemo()
+      home: Home()
     );
   }
 }
@@ -63,7 +63,7 @@ class Home extends StatelessWidget {
           children: <Widget>[
             ListViewDemo(),
             // Icon(Icons.change_history, size: 128.0, color: Colors.black12),
-            BasicDemo(),
+            SilverDemo(),
             ViewDemo(),
           ],
         ),

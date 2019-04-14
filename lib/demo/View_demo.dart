@@ -2,9 +2,27 @@ import 'package:flutter/material.dart';
 import '../model/post.dart';
 
 class ViewDemo extends StatelessWidget {
+  List<Widget> _buildTiles(int length) {
+    return new List.generate(length, (int index) {
+      return Container(
+          color: Colors.grey[300],
+          alignment: Alignment(0.0, 0.0),
+          child: Text(
+            'item $index',
+            style: TextStyle(fontSize: 18.0, color: Colors.grey)
+          )
+        );
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    return PageViewBuilderDemo();
+    return GridView.count(
+      crossAxisCount: 3,
+      crossAxisSpacing: 16.0,
+      mainAxisSpacing: 16.0,
+      children: _buildTiles(100),
+    );
   }
 }
 
@@ -48,7 +66,6 @@ class PageViewBuilderDemo extends StatelessWidget {
     );
   }
 }
-
 
 class PageViewDemo extends StatelessWidget {
   @override

@@ -4,6 +4,9 @@ class FormDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return Scaffold(
+      appBar: AppBar(
+        title: Text('FromDemo'),
+      ),
       body: Theme(
         data: ThemeData(
           primaryColor: Colors.lightBlue,

@@ -7,6 +7,15 @@ import './Checkbox_demo.dart';
 import './Radio_demo.dart';
 import './Slider_demo.dart';
 import './Datetime_demo.dart';
+import './simple_dialog_demo.dart';
+import './Alert_dialog_demo.dart';
+import './Bottom_sheet_demo.dart';
+import './Snack_bar_demo.dart';
+import './Expansion_panel_demo.dart';
+import './Chip_demo.dart';
+import './Data_table.dart';
+import './Card_demo.dart';
+import './Stepper_demo.dart';
 
 class MaterialComponents extends StatelessWidget {
   @override
@@ -18,6 +27,15 @@ class MaterialComponents extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          ListItem(title: 'Stepper Demo', page: StepperDemo() ),
+          ListItem(title: 'Card Demo', page: CardDemo() ),
+          ListItem(title: 'Data Table Demo', page: DataTableDemo() ),
+          ListItem(title: 'Chip Demo', page: ChipDemo() ),
+          ListItem(title: 'ExpansionPanel Demo', page: ExpansionPanelDemo() ),
+          ListItem(title: 'SnackBar Demo', page: SnackBarDemo() ),
+          ListItem(title: 'BootomSheet Demo', page: BottomSheetDemo() ),
+          ListItem(title: 'AlertDialog Demo', page: AlertDialogDemo() ),
+          ListItem(title: 'SimpleDiaolog Demo', page: SimpleDialogDemo() ),
           ListItem(title: 'Datetime Demo', page: DateTimeDemo() ),
           ListItem(title: 'Slider Demo', page: SliderDemo() ),
           ListItem(title: 'Radio Demo', page: RadioDemo() ),
